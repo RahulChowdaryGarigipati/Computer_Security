@@ -1,0 +1,28 @@
+Command to Execute and run the encryption is as follows:
+For Execution: “g++ project2_encryption.cpp -o out1”.
+For Running: “./out1 symm_key.bin pubkey.pem privatekey.pem”.
+
+And the output will be as follows:
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+Enter pass phrase for privatekey.pem:
+
+The pass phrase I used for the privatekey.pem is “14789”.
+Therefore, the following files have been generated after running the encryption program, 
+symmetric.txt, encrypt.txt, signed.txt.sha256.
+
+
+
+Command to Execute and run the decryption is as follows:
+For Execution: “g++ project2_decryption.cpp -o out2”.
+For Running: “./out2 signed.txt.sha256 publickey.pem symmetric.txt”
+
+And the output will be as follows:
+Verified OK
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+
+
+Reference: 1.) https://users.dcc.uchile.cl/~pcamacho/tutorial/crypto/openssl/openssl_intro.html
+	      2.) https://tutonics.com/2012/10/easy-file-encryption-using-openssl.html
+	
